@@ -81,36 +81,37 @@
                                 </ul>
                                 <p class="lead mb-1-9 mb-sm-2-2 font-weight-400 text-center text-sm-start display-28 display-sm-26">Our webiste is coming soon. <br> Please register notify you when it's ready!</p>
                                 
-                                <form class="quform newsletter-form mx-auto mb-3" action="quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
+                                <iframe name="news_iframe" id="news_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='coming-soon.html';}"></iframe> 
+    <form method="post" class="quform-x newsletter-form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfoWHx1d7Gf2jyHsPd9rZpgfh8-j-36XFdTjr5u9pdR0PdSWQ/formResponse" id="nnews-form" target="news_iframe" onsubmit="submitted=true;" > 
+        
 
-                                    <div class="quform-elements">
+                                <div class="quform-elements">
+                                    <div class="row">
 
-                                        <div class="row">
-
-                                            <!-- Begin Text input element -->
-                                            <div class="col-md-12">
-                                                <div class="quform-element">
-                                                    <div class="quform-input">
-                                                        <input class="form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with us" />
-                                                    </div>
+                                        <!-- Begin Text input element -->
+                                        <div class="col-md-12">
+                                            <div class="quform-element mb-0">
+                                                <div class="quform-input">
+                                                    <input class="form-control" name="entry.1936821181" id="email_address" type="text"  placeholder="Subscribe with us">
                                                 </div>
                                             </div>
-                                            <!-- End Text input element -->
-
-                                            <!-- Begin Submit button -->
-                                            <div class="col-md-12">
-                                                <div class="quform-submit-inner">
-                                                    <button class="btn btn-white text-white m-0" type="submit"><i class="fas fa-paper-plane"></i></button>
-                                                </div>
-                                                <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
-                                            </div>
-                                            <!-- End Submit button -->
-
                                         </div>
+                                        <!-- End Text input element -->
 
+                                        <!-- Begin Submit button -->
+                                        <div class="col-md-12">
+                                            <div class="quform-submit-inner">
+                                                <button class="btn btn-white text-white m-0" type="submit" name="newsletter-form"><i class="fas fa-paper-plane"></i></button>
+                                            </div>
+                                            <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
+                                        </div>
+                                        <!-- End Submit button -->
                                     </div>
 
-                                </form>
+                                </div>
+
+                            </form>
 
                                 <ul class="social-icon-style2 mb-0 ps-0">
                                     <li class="my-1"><a href="#!" class="bg-secondary"><i class="ti-facebook text-white"></i></a></li>

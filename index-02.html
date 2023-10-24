@@ -731,7 +731,10 @@
                         <div class="ps-md-8 ps-lg-6 ps-xl-0">
                             <h3 class="text-primary h4 mb-1-6">Newsletter</h3>
                             <p class="text-white mb-1-9">Join our mailing list to receive special offers and the most recent news.</p>
-                            <form class="quform newsletter-form" action="quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
+                            <iframe name="news_iframe" id="news_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='index-02.html';}"></iframe> 
+    <form method="post" class="quform-x newsletter-form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfoWHx1d7Gf2jyHsPd9rZpgfh8-j-36XFdTjr5u9pdR0PdSWQ/formResponse" id="nnews-form" target="news_iframe" onsubmit="submitted=true;" > 
+        
 
                                 <div class="quform-elements">
                                     <div class="row">
@@ -740,7 +743,7 @@
                                         <div class="col-md-12">
                                             <div class="quform-element mb-0">
                                                 <div class="quform-input">
-                                                    <input class="form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with us">
+                                                    <input class="form-control" name="entry.1936821181" id="email_address" type="text"  placeholder="Subscribe with us">
                                                 </div>
                                             </div>
                                         </div>
@@ -749,7 +752,7 @@
                                         <!-- Begin Submit button -->
                                         <div class="col-md-12">
                                             <div class="quform-submit-inner">
-                                                <button class="btn btn-white text-white m-0" type="submit"><i class="fas fa-paper-plane"></i></button>
+                                                <button class="btn btn-white text-white m-0" type="submit" name="newsletter-form"><i class="fas fa-paper-plane"></i></button>
                                             </div>
                                             <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
                                         </div>
