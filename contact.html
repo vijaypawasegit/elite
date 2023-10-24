@@ -191,8 +191,10 @@
                     <div class="row mt-n2-9">
                         <div class="col-lg-7 mt-2-9">
                             <h2 class="text-secondary mb-4 h1">Write Us Something</h2>
-                            <form class="contact quform" action="quform/contact.php" method="post" enctype="multipart/form-data" onclick="">
-                                <div class="quform-elements">
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='contact.html';}"></iframe> 
+    <form method="post" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSeXHXRqtibotRfpXuKuVddg39kpLaEpQEfe7Kq3hSzsaqvQDA/formResponse" id="contact-form" target="hidden_iframe" onsubmit="submitted=true;" > 
+        <div class="quform-elements">
                                     <div class="row">
 
                                         <!-- Begin Text input element -->
@@ -200,7 +202,7 @@
                                             <div class="quform-element form-group">
                                                 <label for="name">Your Name <span class="quform-required">*</span></label>
                                                 <div class="quform-input">
-                                                    <input class="form-control" id="name" type="text" name="name" placeholder="Your name here" />
+                                                    <input name="entry.1144163916" class="form-control" id="name" type="text" required="" placeholder="Your name here" />
                                                 </div>
                                             </div>
                                         </div>
@@ -211,7 +213,7 @@
                                             <div class="quform-element form-group">
                                                 <label for="email">Your Email <span class="quform-required">*</span></label>
                                                 <div class="quform-input">
-                                                    <input class="form-control" id="email" type="text" name="email" placeholder="Your email here" />
+                                                    <input class="form-control" name="entry.1967461945" required="" id="email" type="email"  placeholder="Your email here" />
                                                 </div>
                                             </div>
                                         </div>
@@ -222,7 +224,7 @@
                                             <div class="quform-element form-group">
                                                 <label for="subject">Your Subject </label>
                                                 <div class="quform-input">
-                                                    <input class="form-control" id="subject" type="text" name="subject" placeholder="Your subject here" />
+                                                    <input class="form-control" name="entry.1918623766" id="subject" type="text" placeholder="Your subject here" />
                                                 </div>
                                             </div>
                                         </div>
@@ -233,7 +235,7 @@
                                             <div class="quform-element form-group">
                                                 <label for="phone">Contact Number <span class="quform-required">*</span></label>
                                                 <div class="quform-input">
-                                                    <input class="form-control" id="phone" type="text" name="phone" placeholder="Your phone here" />
+                                                    <input class="form-control" name="entry.1543616710" required="" id="phone" type="text"  placeholder="Your phone here" />
                                                 </div>
                                             </div>
                                         </div>
@@ -244,7 +246,7 @@
                                             <div class="quform-element form-group">
                                                 <label for="message">Message <span class="quform-required">*</span></label>
                                                 <div class="quform-input">
-                                                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Tell us a few words"></textarea>
+                                                    <textarea class="form-control" name="entry.2077958924" required="" id="message"  rows="3" placeholder="Tell us a few words"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,7 +274,7 @@
                                         <!-- Begin Submit button -->
                                         <div class="col-md-12">
                                             <div class="quform-submit-inner">
-                                                <button class="btn-style1 border-0" type="submit"><span>Send Message</span></button>
+                                                <button class="btn-style1 border-0" type="submit" name="submit-form"><span>Send Message</span></button>
                                             </div>
                                             <div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
                                         </div>
