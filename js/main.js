@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Flyweb - Web Design Agency HTML Template
+    Theme Name: Elite Solutions - Web Design Agency HTML Template
     Description: Web Design Agency HTML Template
     Author: Website Design Templates
     Version: 1.1
